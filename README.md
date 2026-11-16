@@ -35,6 +35,10 @@ cargo tauri build
 
 And you should be all set! - Rizsim Studios
 
+## Credits & Acknowledgments
+
+* **[Tauri Dumper]([https://github.com/author/repo](https://github.com/Mas0nShi/tauri-dumper))** by [@Mas0nShi](https://github.com/Mas0nShi/) For the whole crate itself to create this GUI tool.
+
 ## PULL REQUESTS
 If you do add one for MacOS or Linux make sure it is fully working before it gets sent out! for me to manually approve it <br>
 So any type of PR's are open.
