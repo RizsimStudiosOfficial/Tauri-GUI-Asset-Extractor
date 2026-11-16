@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tauri App Extractor</title>
+    <meta name="author" content="Rizsim Studios" />
+    <link rel="icon" type="image/x-icon" href="img/tauri.png" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <link rel="preload" href="../font/allan-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../font/jetbrains-bold.woff2" as="font" type="font/woff2" crossorigin>
+  </head>
+  <body>
+    <div class="mainThing">
+    <div class="logo"></div>
+    <div class="title">Tauri Asset Extractor</div>
+    </div>
+    <br><br>
+    <div id="dropzone" onclick="handleDropzoneClick()">Click or Drop your Tauri exe here to extract the assets</div>
+    <div id="status">Ready</div>
+    <br>
+
+    <div class="rizSiteThing" onclick='window.__TAURI__.opener.openUrl("https://rizsimstudio.com")'>
+    <div class="siteLogo"></div>
+    <div class="siteTitle">Tool made by Rizsim Studios</div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

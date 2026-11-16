@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.tauri.app/config/2.json",
+  "productName": "Tauri Asset Extractor",
+  "mainBinaryName": "Tauri Asset Extractor",
+  "version": "1.0.0",
+  "identifier": "com.tauriassetextractor.rizsimstudios",
+  "build": {
+    "frontendDist": "../src"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "title": "Tauri Asset Extractor",
+        "width": 1280,
+        "height": 720,
+        "minWidth": 1074,
+        "minHeight": 768,
+        "resizable": true,
+        "additionalBrowserArgs": "--disable-features=msWebOOUI,msPdfOOUI,msSmartScreenProtection --disable-background-networking --disable-component-update --enable-unsafe-webgpu"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": false,
+    "icon": [
+      "icons/icon.ico"
+    ]
+  }
+}

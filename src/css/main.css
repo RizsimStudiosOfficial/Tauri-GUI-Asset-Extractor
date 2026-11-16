@@ -1,0 +1,153 @@
+
+    :root {
+    --easeOutQuart: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    }
+    
+    * {
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-drag: none;
+    }
+
+    @font-face {
+    font-family: allanregular;
+    src: url('../font/allan-regular-webfont.woff2') format('woff2'), url('../font/allan-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: optional
+    }
+
+    @font-face {
+    font-family: jetbrains;
+    src: url('../font/jetbrains-bold.woff2') format('woff2'), url('../font/jetbrains-bold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: optional
+    }
+
+    @font-face {
+    font-family: poppins-semibold;
+    src: url('../font/poppins-semibold.woff2') format('woff2'), url('../font/poppins-semibold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: optional
+    }
+
+    body { 
+        font-family: jetbrains, sans-serif; 
+        margin: 0;
+        padding: 0;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        height: 100vh; 
+        margin: 0; 
+        background: #1e1e1e; 
+        overflow: hidden;
+        touch-action: none;
+        color: #fff; 
+    }
+
+    #dropzone {
+        border: 2px dashed #555;
+        border-radius: 12px;
+        background-color: #3737374e;
+        width: 80%;
+        height: 60%;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: clamp(16px, 2.5vw, 25px);
+        font-weight: bold;
+        overflow-wrap: break-word;
+        cursor: pointer;
+        top: 100%;
+        transform: scale(1);
+        opacity: 0.5;
+        transition: transform 0.2s ease, opacity 0.2s ease, border-color 0.2s ease, font-size 0.2s var(--easeOutQuart), background-color 0.2s var(--easeOutQuart);
+    }
+
+    .mainThing {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .logo {
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0;
+        background-image: url(../img/tauri.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .title {
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 1.1;
+    }
+
+    #status {
+        text-transform: uppercase;
+        opacity: 20%;
+        margin-top: 16px; 
+        font-size: 20px; 
+        color: #aaa; 
+    }
+
+    .rizSiteThing {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        gap: 20px;
+    }
+
+    .siteLogo {
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0;
+        background-image: url(../img/rizSite.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+        opacity: 0.5;
+    }
+
+    .siteTitle {
+        font-family: allanregular, sans-serif; 
+        opacity: 50%;
+        font-size: 30px;
+        line-height: 1.1;
+        transition: transform 0.2s ease,opacity 0.2s ease;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+    .rizSiteThing:hover .siteTitle, .siteTitle:hover {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+
+    .rizSiteThing:hover .siteLogo, .siteLogo:hover {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    #dropzone:hover {
+        border-color: #588eeb;
+        background-color: rgba(86, 157, 224, 0.413);
+        font-size: 27px;
+        opacity: 1;
+        transform: scale(1.02);
+    }
+}
