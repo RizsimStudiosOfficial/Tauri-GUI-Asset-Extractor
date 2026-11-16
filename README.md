@@ -23,8 +23,8 @@ After that make sure you have [GIT](https://git-scm.com/install/) installed. (In
 Then clone this repository and then open a terminal in the project folder:
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
+git clone https://github.com/RizsimStudiosOfficial/Tauri-GUI-Asset-Extractor
+cd Tauri-GUI-Asset-Extractor/src-tauri
 ```
 
 then just build with this command here
