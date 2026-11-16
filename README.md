@@ -9,9 +9,7 @@ Download the latest exe from the releases tab area.
 ## Available for..
 
 * **Windows** (Yes)
-<br>
 * **MacOS** (No)
-<br>
 * **Linux** (No)
 
 ## However..
